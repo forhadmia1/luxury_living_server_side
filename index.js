@@ -1,4 +1,5 @@
 const express = require('express');
+<<<<<<< HEAD
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const app = express()
 require('dotenv').config()
@@ -53,6 +54,11 @@ async function run() {
 run().catch(console.dir)
 
 
+=======
+const app = express()
+const port = process.env.PORT || 5000;
+
+>>>>>>> 9a5223107853fe8921d511c2c2419d3247903183
 app.get('/', (req, res) => {
     res.send('Welcome to Luxury Living')
 })
